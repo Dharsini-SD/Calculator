@@ -28,7 +28,7 @@ struct LoginView: View {
                     .frame(height: 1)
                     .foregroundStyle(LinearGradient(colors: [.blue,.pink], startPoint: .topTrailing, endPoint: .bottomLeading)),
                 alignment: .bottom)
-                .frame(height: 50)
+                .frame(height: 30)
                 
                 .cornerRadius(10)
                 .padding(.horizontal)
@@ -53,7 +53,7 @@ struct LoginView: View {
                         LinearGradient(colors: [.blue,.pink], startPoint: .topTrailing, endPoint: .bottomLeading)
                     }
             }.frame(maxWidth: .infinity)
-                .padding(.horizontal)
+                .padding()
             
             Button("Forgot Password?"){
                 
@@ -114,10 +114,10 @@ struct SecuredTextField: View {
                 }
         }
         
-        
+        .frame(height: 30)
         .overlay(Rectangle().frame(height: 1)
             .foregroundStyle(LinearGradient(colors: [.blue,.pink], startPoint: .topTrailing, endPoint: .bottomLeading)), alignment: .bottom)
-        .frame(height: 50)
+        
         .cornerRadius(10)
         .padding(.horizontal)
     }
